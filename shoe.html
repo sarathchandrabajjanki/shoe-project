@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            height: 700px;
+            width: 1100px;
+            border: solid black 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(bg.png);
+        }
+        #product{
+            height: 600px;
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #left{
+            height: 600px;
+            width: 450px;
+            border-radius: 0px 50% 50% 0px;
+            background-color: orangered;
+        }
+        #right{
+            height: 600px;
+            width: 450px;
+            background-color: black;
+            color: orange;
+        }
+        #img{
+            height: 400px;
+            position: relative;
+            top: 130px;
+            left: -50px;
+            transition-duration: 2s;
+        }
+        #img:hover{
+            transform: rotate(10deg);
+        }
+        #div{
+            margin-top: 100px;
+            margin-left: 30px;
+            color: wheat;
+            font-size: larger;
+            font-family: fantasy;
+        }
+        #div2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            margin-left: -100px;
+        }
+        .btn{
+            height: 25px;
+            width: 25px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="product">
+            <div id="left">
+                <img id="img" src="shoe.png" alt="">
+            </div>
+            <div id="right">
+                <h1>AirMax</h1>
+                <div id="div">
+                    <h1>Winter collections</h1>
+                    <h1>Mens black wear</h1>
+                </div>
+                <div id="div2">
+                    <h2>💰500</h2>
+                    <strike style="font-size: 30px;">1000</strike>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;gap: 50px;">
+                    <h2>size</h2>
+                    <h2>7</h2>
+                    <h2>8</h2>
+                    <h2>9</h2>
+                    <h2>10</h2>
+                </div>
+                <div style="display: flex; justify-content: center;align-items: center; gap: 50px;">
+                    <h2>COLOR</h2>
+                    <button  style="background-color: white;" class="btn"></button>
+                    <button style="background-color: blue;" class="btn"></button>
+                    <button style="background-color: red;" class="btn"></button>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 30px; font-family: fantasy;">
+                    <h2>Buy now</h2>
+                    <h2>Add to cart</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
